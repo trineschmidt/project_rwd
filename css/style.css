@@ -1,0 +1,337 @@
+/* Global CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+body { background-color:#eee; padding:0; margin:0;
+font-family: 'Montserrat', sans-serif;;
+}
+
+/* Controlling the slide effect */
+
+#menu {
+
+}
+
+#menu.active {
+
+}
+
+.menu-link {
+
+}
+
+.container {
+
+}
+
+.container.active {
+
+}
+
+/* Slider effect - save for last and will be shown in class */
+
+
+/* Styling */
+
+/* MENU - Global */
+
+li.current, li.current a, li.current a:active {  }
+
+a {
+
+  }
+
+ul { 
+
+}
+
+
+#transparent_layer { height:25px; background-color:transparent; width:35px; position:relative; top:-10px } /*Click area for invisible field for mobile menu*/
+
+#menu-link-icon, #menu-link-icon:after, #menu-link-icon:before {
+     position:absolute;
+     width:35px;
+     height:5px;
+     background:black;
+     border-radius:20px;
+}
+#menu-link-icon {
+     display:block;
+     text-indent:-999em;
+     top:25px;
+}
+#menu-link-icon:after, #menu-link-icon:before {
+     content:"\00a0";
+     left:0;
+}
+#menu-link-icon:before {
+     top:-10px;
+}
+#menu-link-icon:after {
+     top:10px;
+}
+
+/* MENU - Desktop */
+
+#desktop_menu {
+}
+#desktop_menu ul {
+}
+#desktop_menu li {
+}
+#desktop_menu li a {
+}
+#desktop_menu li + li {
+}
+
+
+/* MENU - mobile */
+
+nav#menu { }
+nav#menu ul { }
+nav#menu li {  }
+nav#menu li a {   }
+nav#menu li:hover {  }
+nav#menu li a:hover, #desktop_menu li a:hover {   }
+nav#menu li a:active, #desktop_menu li a:active {  }
+
+/* Top area CSS */
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: #373c3f;
+}
+
+/* Banner area CSS */
+.banner h2 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 5vw;
+}
+.banner h3 {
+    color: #a6d5df;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+#toptext {
+    position: relative;
+}
+#banner_click {
+    position: relative;
+    bottom: 70px;
+    left: 545px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30px;
+}
+.banner {
+    width: 100%;
+    height: 550px;
+    background-color: #15afc3;
+
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+/* Info area CSS */
+
+.info_box {
+    width: 100%;
+    height: 235px;
+}
+.info_left {
+    width: 75%;
+    height: 235px;
+    background-color: #27212c;
+
+    float: left; color: #7b6d87;
+    font-size: 30px;
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.info_right {
+    width: 25%;
+    height: 235px;
+    background-color: #bc3183;
+    float: right;
+}
+
+#info_click {
+    position: relative;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    top: 95px;
+    left: 145px;
+}
+
+/* Three_box area CSS */
+
+.three_box {
+    width: 100%;
+    height: 282px;
+}
+
+.three_left {
+    width: 33.33%;
+    height: 282px;
+    background-color: #5b0fa1;
+    float: left;
+}
+.three_left p {
+    color: #ffffff;
+    font-size: 50px;
+    position: relative;
+    left: 170px;
+    top: 60px;
+}
+.three_mid {
+    width: 33.33%;
+    height: 282px;
+    float: left;
+}
+.three_mid img, .three_right img {
+    width: 100%;
+    height: 100%;
+}
+
+.three_right {
+    width: 33.33%;
+    height: 282px;
+    float: left;
+}
+
+/* Footer area CSS */
+
+.footer {
+    width: 100%;
+    height: 555px;
+    background-color: #ebebeb;
+}
+.footer_text {   }
+.footer h2 {
+    color: #088ca5;
+    font-size: 30px;
+    position: relative;
+    left: 90px;
+    top: 40px;
+}
+.footer p {
+    color: black;
+    font-size: 12px;
+    -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 2; /* Firefox */
+    columns: 100px 2;
+    word-spacing: 2px;
+    line-height: 180%;
+    position: relative;
+    top: 50px;
+    left: 90px;
+}
+
+
+/* Media Query section */ 
+@media all and (max-width: 640px) {
+   
+    .top  {
+        width: 100%;
+        height: 75px;
+    }
+   
+    #menu {  }
+    nav#desktop_menu {   }
+
+    .banner {
+        width: 100%;
+        height: 350px;
+    }
+    .banner h2 {
+        font-size: 40px;
+    }
+    .banner h3 {
+        font-size: 20px;
+    }
+    #banner_click {
+        font-size: 20px;
+        bottom: 41px;
+        left: 435px;
+    }
+    .info_box, .info_left, .info_right {
+        width: 100%;
+        height: 150px;
+        font-size: 20px;
+    }
+    .info_left {
+        width: 75%;
+    }
+    .info_right {
+        width: 25%;
+    }
+    #info_click {
+       position: relative;
+        top: 54px;
+        left: 72px;
+    }
+
+    .three_left {
+        width: 100%;
+        height: 550px;
+    }
+    .three_mid {
+        width: 100%;
+        height: 550px;
+    }
+    .three_right {
+        width: 100%;
+        height: 550px;
+    }
+    .three_left p {
+        position: relative;
+        top: 160px;
+        left: 300px;
+        font-size: 70px;
+    }
+        
+    .footer {
+        width: 100%;
+        height: 895px;
+    }
+    .footer p {
+        -webkit-columns: 100px 1; /* Chrome, Safari, Opera */
+        -moz-columns: 100px 1; /* Firefox */
+        columns: 100px 1;
+    }
+}
+
